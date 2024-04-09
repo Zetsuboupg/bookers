@@ -1,0 +1,16 @@
+<div class="book-wrap">
+
+<div>
+  <%= flash[:notice] %>
+</div>
+
+<h2>タイトル</h2>
+<p><%= @book.title %></p>
+
+<h2>本文</h2>
+<p><%= @book.body %></p>
+
+<%= link_to "edit", edit_book_path(@book.id) %>
+<tr>|</tr>
+<%= link_to 'Back', "/books" %>
+</div>
